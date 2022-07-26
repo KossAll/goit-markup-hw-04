@@ -100,7 +100,7 @@ body {
 
 .header-page {
   background-color: var(--fon-color);
-  border: 1px solid #000000;
+  border: 1px solid var(--border-color);
 }
 
 .header-page-portfolio {
@@ -166,9 +166,14 @@ body {
 .hero {
   text-align: center;
   padding: 200px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero/Hero.jpg);
+  background-image: linear-gradient(
+  to right,  
+  rgba(47, 48, 58, 0.4), 
+  rgba(47, 48, 58, 0.4)),
+  url(../images/hero/Hero.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #c4c4c4;
   max-width: 1600px;
   margin-left: auto;
@@ -224,13 +229,15 @@ body {
 }
 
 .about-container-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
   background-color: var(--filter-btn-team);
   margin-bottom: 30px;
 }
 
-.about-icon {
-  margin: 25px 100px;
-}
+
 .about-title-hidden {
   visibility: hidden;
   pointer-events: none;
@@ -339,7 +346,6 @@ body {
 }
 .clients-link {
   display: flex;
-  width: 170px;
   height: 92px;
 }
 
@@ -349,6 +355,7 @@ body {
   gap: 30px;
 }
 .clients-list-item {
+  flex-basis: calc((100% - 150px) / 5);
   border-radius: 4px;
   border: 1px solid var(--color-icons);
 }
@@ -384,6 +391,7 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-container-address {
@@ -424,7 +432,6 @@ body {
 }
 
 .foter-title {
-  margin-top: 12px;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
@@ -521,9 +528,12 @@ body {
   gap: 30px;
 }
 
-.portfolio-sections-link {
+.portfolio-sections-list {
   flex-basis: calc((100% - 60px) / 3);
   cursor: pointer;
+}
+.portfolio-sections-link{
+ display: block;
 }
 
 .portfolio-sections-link:hover,
@@ -551,23 +561,4 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
-}
-
-.team-social-item {
-  background-color: #188ce8;
-}
-.team-list-icon {
-  margin: 12px;
-}
-
-.team-social-list {
-  display: flex;
-}
-
-.team-social-list-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--fon-color);
 }
