@@ -370,13 +370,6 @@ body {
   fill: var(--color-icons);
 }
 
-.clients-link-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--fon-color);
-}
-
 .clients-link:hover .clients-link-icon,
 .clients-link:focus .clients-link-icon {
   fill: var(--accent-color);
