@@ -346,6 +346,8 @@ body {
 }
 .clients-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 92px;
 }
 
@@ -366,7 +368,6 @@ body {
 
 .clients-link-icon {
   fill: var(--color-icons);
-  margin: 16px 32px;
 }
 
 .clients-link-icon {
@@ -419,6 +420,16 @@ body {
   font-weight: 400;
   line-height: 1.71;
   color: var(--fon-color);
+}
+
+.footer-address:hover,
+.footer-address:focus {
+  color: var(--accent-color);
+}
+
+.address:hover,
+.address:focus {
+  color: var(--accent-color);
 }
 
 .footer-mailto {
