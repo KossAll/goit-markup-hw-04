@@ -528,12 +528,9 @@ body {
   gap: 30px;
 }
 
-.portfolio-sections-list {
-  flex-basis: calc((100% - 60px) / 3);
-  cursor: pointer;
-}
 .portfolio-sections-link{
  display: block;
+ flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-sections-link:hover,
@@ -547,6 +544,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  color: var(--text-color);
 }
 
 .portfolio-text {
